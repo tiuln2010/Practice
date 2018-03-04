@@ -1,0 +1,30 @@
+
+2018-03-04 20:39:59.982701
+Traceback (most recent call last):
+  File "except_time_threading.py", line 10, in wrapper
+    result = method(*args, **kwargs)
+  File "except_time_threading.py", line 26, in helper
+    help_wow(1)
+  File "except_time_threading.py", line 30, in help_wow
+    print('wow'+x)
+TypeError: must be str, not int
+
+2018-03-04 20:42:36.511143
+Traceback (most recent call last):
+  File "except_time_threading.py", line 10, in wrapper
+    result = method(*args, **kwargs)
+  File "except_time_threading.py", line 26, in helper
+    help_wow(1)
+  File "except_time_threading.py", line 30, in help_wow
+    print('wow'+x)
+TypeError: must be str, not int
+
+2018-03-04 20:42:36.788377
+Traceback (most recent call last):
+  File "C:\projects\Practice\except_time_threading.py", line 10, in wrapper
+    result = method(*args, **kwargs)
+  File "C:\projects\Practice\except_time_threading.py", line 26, in helper
+    help_wow(1)
+  File "C:\projects\Practice\except_time_threading.py", line 30, in help_wow
+    print('wow'+x)
+TypeError: must be str, not int
