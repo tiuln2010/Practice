@@ -29,8 +29,7 @@ def printer():
         time.sleep(2)
         i -= 1
 
-#@save_err
-def starter():
+#@save_errdef starter():
     h = threading.Thread(target = helper, args = (1,2))
     p = threading.Thread(target = printer)
     h.start()
