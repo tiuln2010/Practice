@@ -23,6 +23,8 @@ def helper_wrap(b,c,a = 'a'):
 
 @save_err
 def helper(b, c, a = 'a'):
+    make_err_process = multiprocessing.Process(target = err_printer)
+    make_err_process.start()
     help_wow(1)
     print(a,b,c)
 
@@ -35,6 +37,10 @@ def printer():
         print('zzzzz')
         time.sleep(2)
         i -= 1
+        
+@save_err
+def err_printer():
+    raise ValueError
 
 #@save_err
 if __name__ == '__main__':
@@ -55,4 +61,4 @@ if __name__ == '__main__':
     '''
     흐아.. 멀티프로레싱의 대상함수는 반드시 그냥 함수여야함. ~.~ 식의 함수를 넣을 경우 오류가 발생한다!
       => decorator 를쓰면 안됨!
-      
+    '''

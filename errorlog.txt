@@ -28,3 +28,59 @@ Traceback (most recent call last):
   File "C:\projects\Practice\except_time_threading.py", line 30, in help_wow
     print('wow'+x)
 TypeError: must be str, not int
+
+2018-03-05 08:07:51.033237
+Traceback (most recent call last):
+  File "except_time_threading.py", line 10, in wrapper
+    result = method(*args, **kwargs)
+  File "except_time_threading.py", line 28, in helper
+    help_wow(1)
+  File "except_time_threading.py", line 32, in help_wow
+    print('wow'+x)
+TypeError: must be str, not int
+
+2018-03-05 08:07:51.135509
+Traceback (most recent call last):
+  File "C:\projects\Practice\except_time_threading.py", line 10, in wrapper
+    result = method(*args, **kwargs)
+  File "C:\projects\Practice\except_time_threading.py", line 28, in helper
+    help_wow(1)
+  File "C:\projects\Practice\except_time_threading.py", line 32, in help_wow
+    print('wow'+x)
+TypeError: must be str, not int
+
+2018-03-05 08:09:45.441905
+Traceback (most recent call last):
+  File "except_time_threading.py", line 10, in wrapper
+    result = method(*args, **kwargs)
+  File "except_time_threading.py", line 27, in helper
+    make_err_process.start()
+  File "C:\Users\Yesjin\AppData\Local\Programs\Python\Python36\lib\multiprocessing\process.py", line 105, in start
+    self._popen = self._Popen(self)
+  File "C:\Users\Yesjin\AppData\Local\Programs\Python\Python36\lib\multiprocessing\context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "C:\Users\Yesjin\AppData\Local\Programs\Python\Python36\lib\multiprocessing\context.py", line 322, in _Popen
+    return Popen(process_obj)
+  File "C:\Users\Yesjin\AppData\Local\Programs\Python\Python36\lib\multiprocessing\popen_spawn_win32.py", line 65, in __init__
+    reduction.dump(process_obj, to_child)
+  File "C:\Users\Yesjin\AppData\Local\Programs\Python\Python36\lib\multiprocessing\reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+AttributeError: Can't pickle local object 'save_err.<locals>.wrapper'
+
+2018-03-05 08:09:45.554203
+Traceback (most recent call last):
+  File "C:\projects\Practice\except_time_threading.py", line 10, in wrapper
+    result = method(*args, **kwargs)
+  File "C:\projects\Practice\except_time_threading.py", line 27, in helper
+    make_err_process.start()
+  File "C:\Users\Yesjin\AppData\Local\Programs\Python\Python36\lib\multiprocessing\process.py", line 105, in start
+    self._popen = self._Popen(self)
+  File "C:\Users\Yesjin\AppData\Local\Programs\Python\Python36\lib\multiprocessing\context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "C:\Users\Yesjin\AppData\Local\Programs\Python\Python36\lib\multiprocessing\context.py", line 322, in _Popen
+    return Popen(process_obj)
+  File "C:\Users\Yesjin\AppData\Local\Programs\Python\Python36\lib\multiprocessing\popen_spawn_win32.py", line 65, in __init__
+    reduction.dump(process_obj, to_child)
+  File "C:\Users\Yesjin\AppData\Local\Programs\Python\Python36\lib\multiprocessing\reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+AttributeError: Can't pickle local object 'save_err.<locals>.wrapper'
